@@ -1,0 +1,60 @@
+#post .post-copyright {
+	border-radius:8px
+}
+#post .post-copyright {
+	margin:1rem 0 .5rem;
+	width:100%;
+	border:2px dashed var(--font-color);
+	padding:1.5rem 1.3rem;
+	overflow:hidden
+}
+#post .post-copyright .post-copyright-info {
+	overflow:hidden;
+	display:-webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
+}
+#post .post-copyright .post-copyright__author {
+	color:var(--mj-fontcolor);
+	padding:0;
+	font-weight:700;
+	font-size:1rem;
+	line-height:1.38
+}
+@media screen and (max-width:768px) {
+	#post .post-copyright__notice .post-copyright-info {
+	font-size:x-small
+}
+}#post .post-copyright__type {
+	font-size:14px
+}
+#post .post-copyright__notice .post-copyright-info {
+	font-weight:700;
+	-webkit-line-clamp:2
+}
+#post .post-copyright .post-copyright-info a {
+	text-decoration:none;
+	word-break:break-word
+}
+#post .post-copyright:before {
+	display:none
+}
+#post .post-copyright:after {
+	position:absolute;
+	right:12px;
+	top:-80px;
+	content:'\f25e';
+	font-size:150px;
+	font-family:'Font Awesome 5 Brands';
+	opacity:.2;
+	color:var(--font-color);
+	opacity:.4;
+	filter:blur(5px)
+}
+[data-theme=dark] #post .post-copyright .post-copyright-info {
+	color:var(--mj-fontcolor);
+	overflow:hidden;
+	display:-webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical
+}
