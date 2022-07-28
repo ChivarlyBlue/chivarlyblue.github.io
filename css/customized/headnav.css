@@ -1,13 +1,9 @@
-/*横向排布子菜单*/
-#nav .menus_items .menus_item .menus_item_child li {
-    display: inline-block;
-  }
-/*隐藏圆角*/
-  ul.menus_item_child {
-    overflow: hidden;
-    border-radius: 5px;
-  }
+/*圆角*/
+ul.menus_item_child {
+  overflow: hidden;
+  border-radius: 5px;
+}
 /*调整空隙*/
-  #nav .menus_items .menus_item .menus_item_child {
-    margin-top: 0px !important;
-  }
+#nav .menus_items .menus_item .menus_item_child {
+  margin-top: 0px !important;
+}
